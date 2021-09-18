@@ -1,6 +1,6 @@
 # Applied ML learning in Python
-* (Michigan Data Science Team Challenge Blight ticket compliance) [https://midas.umich.edu/educational/mdst-announces-detroit-blight-data-challenge-organizational-meeting-feb-16/]
-* (Kaggle Leaderboard)[https://www.kaggle.com/c/detroit-blight-ticket-compliance/leaderboard]
+* [Michigan Data Science Team Challenge Blight ticket compliance](https://midas.umich.edu/educational/mdst-announces-detroit-blight-data-challenge-organizational-meeting-feb-16/)
+* [Kaggle Leaderboard](https://www.kaggle.com/c/detroit-blight-ticket-compliance/leaderboard)
 * The Area Under the Curve is of 0.814
 * The graded AUC from coursera drops to 0.776
 * Rows: 61,001
