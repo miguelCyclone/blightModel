@@ -47,8 +47,8 @@ def blight_model():
     
     # Far below there are plots and grouppedBy that I used to have a deeper understanding
     # a) admin_fee and state_fee are constant in 100% of all the rows, country is mainly USA, cleanup cost is 0
-    # b) Late_fee, its a fee that is placed if its not paid on time
-    # c) Hearing date as well as late_fee can induce to data leak
+    # b) Late_fee, its a fee that is paid if its not paid on time. However is palces since the beginning of the sanction (no data leak)
+    # c) Hearing date can induce to data leak as it is placed if it wasnt paid on time
     # d) judgment_amount includes all fees, it diverges from fine_fee, and it can include data leak from late_fee
     # e) ticket_ID the ID of each row is not meaningfull, ticket_issued_date doesnt impact in the violator
     # f) inspector_name is a not a variable that impacts in the violator, the violator is independant from it
@@ -59,7 +59,6 @@ def blight_model():
     #    the prediction is that she won't pay. This is useless.
     dfTrain2 = dfTrain2.drop(['admin_fee', 'state_fee', 'country', 'ticket_issued_date',
                               'hearing_date',
-                              #'late_fee',
                               'ticket_id',
                               'clean_up_cost', 'judgment_amount', 'inspector_name', 'violator_name',
                               'agency_name'], axis=1)
