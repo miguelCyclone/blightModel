@@ -1,4 +1,4 @@
-# Main script
+# Main script! :)
 
 from blightModel import *
 
